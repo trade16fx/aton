@@ -1,0 +1,18 @@
+// @import '../css/src/reset';
+// @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+
+@import 'base/fonts'; 
+@import 'base/grid';
+@import 'base/base';
+@import 'layout/buttons';
+@import 'layout/form';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+h1{
+	color: red;
+}
+h2{
+	color: green;
+}

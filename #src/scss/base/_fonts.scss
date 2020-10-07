@@ -1,0 +1,12 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		font-display: swap; // Uncomment to initially display system onfts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+// @include font('Jura', normal, 600, '../fonts/Jura-Medium.woff2');
+@include font('MADE Evolve Sans EVO', normal, 500, '../fonts/MADEEvolveSansEVO-Medium.woff2');
