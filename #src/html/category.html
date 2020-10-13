@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+@@include('./layout/_head.html')
+
+<body class="body">
+  <!-- <div class="wrapimg"></div> -->
+  <div class="site-wrapper">
+    @@include('./layout/_header.html')
+    <div class="content-top container">
+      <div class="row">
+        <div class="col-4 col-lg-3 content-top__left">
+          <div class="dropdown-cont dropdown-cont_catalog">
+            <div class="categorymenu-dropdown js-dropdown">Каталог товаров</div>
+            @@include('../modules/_category-menu.html')
+          </div>
+        </div>
+        <div class="site-main col-12 col-md-8 col-lg-9">
+          @@include('../modules/_search-block.html')
+        </div>
+      </div>
+    </div>
+    <div class="catalog-page container">
+      <div class="row">
+        <aside class="col-4 d-none d-md-block col-lg-3 sidebar">
+          @@include('./layout/_filter.html')
+        </aside>
+        <main class="site-main col-12 col-md-8 col-lg-9">
+          @@include('../modules/_breadcrumbs.html')
+          <h2>Розетки и выключатели</h2>
+          <div class="brands-panel">
+            <div class="brands-panel__btn brand-btn">Legrand</div>
+            <div class="brands-panel__btn brand-btn">Schneider Elecric</div>
+            <div class="brands-panel__btn brand-btn">Gira</div>
+            <div class="brands-panel__btn brand-btn">ABB</div>
+            <div class="brands-panel__btn brand-btn">Livolo</div>
+            <div class="brands-panel__btn brand-btn">Merten</div>
+            <div class="brands-panel__btn brand-btn">FEDE</div>
+          </div>
+          <div class="sortBy-panel">
+            <div class="sortBy-panel__mobile-cont">
+              <div class="filter-btn">Фильтр</div>
+              <!-- <div class="sort-btn"><span>Сортировка</span></div> -->
+            </div>
+            <div class="sortBy-panel__sort-cont">
+              <div class="sortBy-panel__label">Сортировать</div>
+              <div class="sortBy-panel__select-wrapper">
+                <select name="" id="" class="sort-select">
+                  <option value="">По умолчанию</option>
+                  <option value="">Name</option>
+                  <option value="">Price</option>
+                  <option value="">Rating</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="filter-block">
+            @@include('./layout/_filter.html')
+          </div>
+          <div class="proguct-grid row">
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product.html')
+            </div>
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product2.html')
+            </div>
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product.html')
+            </div>
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product2.html')
+            </div>
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product.html')
+            </div>
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product2.html')
+            </div>
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product.html')
+            </div>
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product2.html')
+            </div>
+            <div class="proguct-grid__item col-12 col-md-6 col-xl-4">
+              @@include('../modules/_product.html')
+            </div>
+          </div>
+          <div class="pagination-wrapper">
+            <ul class="pagination">
+              <li><span>1</span></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+            </ul>
+          </div>
+          <div class="home-page__text-block">
+            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности предоставляет широкие возможности для направлений прогрессивного развития. Для современного мира дальнейшее развитие различных форм деятельности однозначно определяет каждого участника как способного принимать собственные решения касаемо как самодостаточных, так и внешне зависимых концептуальных решений. Повседневная практика показывает, что повышение уровня гражданского сознания напрямую зависит от системы обучения кадров, соответствующей насущным потребностям.</p>
+            <p>Настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности предоставляет широкие возможности для направлений прогрессивного развития. Для современного мира дальнейшее развитие различных форм деятельности однозначно определяет каждого участника как способного принимать собственные решения касаемо как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+            <p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности предоставляет широкие возможности для направлений прогрессивного развития. Для современного мира дальнейшее развитие различных форм деятельности однозначно определяет каждого участника как способного принимать собственные решения касаемо как самодостаточных, так и внешне зависимых концептуальных решений. Повседневная практика показывает, что повышение уровня гражданского сознания напрямую зависит от системы обучения кадров, соответствующей насущным потребностям.</p>
+          </div>
+        </main>
+      </div>
+    </div>
+    @@include('./layout/_footer.html')
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </div>
+</body>
+
+</html>

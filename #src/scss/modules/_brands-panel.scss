@@ -1,0 +1,32 @@
+.brands-panel {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -14px;
+	// margin-bottom: -12px;
+	margin-bottom: 15px;
+	&__btn {
+		margin-right: 14px;
+		margin-bottom: 12px;
+	}
+}
+.brand-btn {
+	height: 30px;
+border: 1px solid #cccccc;
+background-color: #ffffff;
+font-family: "Futura PT - Demi";
+font-size: 13px;
+letter-spacing: 0.36px;
+text-align: center;
+line-height: 30px;
+border-radius: 3px;
+padding: 0 27px;
+cursor: pointer;
+
+	@media (min-width: 768px) { 
+			height: 42px;
+			line-height: 42px;
+			padding: 0 47px;
+			font-size: 18px;
+  }
+
+}
