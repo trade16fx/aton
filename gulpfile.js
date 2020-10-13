@@ -14,7 +14,7 @@ let patch = {
 		css: source_foler + "/scss/main.scss",
 		js: source_foler + "/js/main.js",
 		img: source_foler + "/images/**/*.{jpg,png,svg,gif,ico,webp}",
-		fonts: source_foler + "/fonts/src/*.ttf",
+		fonts: source_foler + "/fonts/*.ttf",
 	},
 	watch: {
 		html: [source_foler + "/html/**/*.html", source_foler + "/modules/**/*.html"],

@@ -1,0 +1,140 @@
+/* mob-menu-btn begin */
+.menu-button
+{
+    position: relative;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    &__burger
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60%;
+        height: 3px;
+        // transform: translateX(-50%);
+        margin: -1px 0 0 -30%;
+        transition: transform .2s ease 0s;
+
+        &:before,
+        &:after
+        {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: #000;
+        }
+        &:before
+        {
+            top: -8px;
+            transition: top .2s linear .4s;
+        }
+        &:after
+        {
+            bottom: -8px;
+            transition: bottom .2s linear .4s;
+        }
+    }
+    &__burger-line
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform .2s linear .2s;
+        background: #000;
+    }
+
+    &.active &__burger
+    {
+        transition: transform .2s linear .4s;
+        transform: rotate(45deg);
+    }
+    &.active &__burger-line
+    {
+        transform: rotate(90deg);
+    }
+    &.active &__burger:before
+    {
+        top: 0;
+        transition: top .2s linear; 
+    }
+    &.active &__burger:after
+    {
+        bottom: 0;
+        transition: bottom .2s linear;
+    }
+}
+
+
+/* mob-menu-btn end */
+
+
+/* mobile-menu dropdown-arrow */
+
+.mobile-menu .dropdown-button
+{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 50px;
+    height: 52px;
+}
+.mobile-menu .dropdown-button:before
+{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    content: '';
+    -webkit-transition: all 300ms ease-out;
+       -moz-transition: all 300ms ease-out;
+         -o-transition: all 300ms ease-out;
+            transition: all 300ms ease-out;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+
+    border-right: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+.mobile-menu .dropdown-button.active:before
+{
+
+    border-left: 1px solid #707070;
+    border-top: 1px solid #707070;
+
+     border-right: none;
+
+                        border-bottom: none;
+
+
+    top: 19px;                    
+
+}
+
+.mobile-menu ul ul
+{
+    display: none;
+
+    width: 100%;
+}
+
+/* mobile-menu dropdown-arrow eof */

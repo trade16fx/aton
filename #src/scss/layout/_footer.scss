@@ -1,0 +1,173 @@
+.site-footer {
+  background-color: #1b1b1b;
+  padding: 45px 0;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+  	@media (min-width: 768px) { 
+  		padding: 95px 0;
+  		text-align: left;
+    }
+
+  &__logo {
+  	margin-bottom: 37px;
+  	@media (min-width: 992px) {
+  	}
+  	img{
+  		
+  		margin-bottom: 14px;
+  		width: 156px;
+  	}
+  }
+
+  &__info {}
+
+  &__address {
+  	margin-bottom: 30px;
+  	font-size: 16px;
+  	letter-spacing: 0.32px;
+
+  	p{
+  		color: #eeeeee;
+  	}
+  }
+
+  &__label {
+  	font-weight: 500;
+  }
+
+  &__sotial {
+    height: auto !important;
+    justify-content: center;
+    margin-bottom: 55px;
+    @media (min-width: 768px) { 
+  		margin-bottom: 0;
+  		justify-content: flex-start;
+    }
+
+    a{
+    	width: 32px;
+    	height: 32px;
+    	margin-right: 14px;
+    }
+
+
+    &_last {}
+  }
+
+  &__shedule {
+  	margin-bottom: 36px;
+
+  	@media (min-width: 992px) { 
+
+  	}
+
+		.shedule-block__hour{
+
+		}
+    .shedule-block__tel {
+      color: #fff;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.footer-menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li{
+		font-size: 18px;
+			letter-spacing: 0.36px;
+			margin-bottom: 15px;
+
+
+	}
+	a{
+		color: #eeeeee;
+		text-decoration: none;
+		transition: all .3s;
+		border-bottom: 1px solid transparent;
+
+		&:hover{
+			border-color: #fff;
+		}
+	}
+}
+
+.sotial-block {}
+
+.shedule-block {
+ 
+
+  &__whatsapp {}
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+
+  @media (min-width: 992px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #333333;
+    text-decoration: none;
+    border-bottom: 1px solid #333333;
+     
+    transition: prop time;
+  }
+
+  &__left {
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+    	margin-bottom: 0;
+
+    }
+  }
+
+  &__middle {
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+    	margin-bottom: 0;
+    	padding: 0;
+    }
+  }
+
+  &__right {}
+
+  &__polit {}
+
+  &__copy {}
+
+  &__developer {
+    position: relative;
+    display: inline-block;
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      right: -15px;
+      top: -5px;
+      width: 16px;
+      height: 13px;
+      background: url(../images/webdo@2x.png) 0 0 no-repeat;
+      background-size: 100% auto;
+    }
+
+  }
+}

@@ -1,30 +1,98 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 @@include('./layout/_head.html')
 
-<body>
+<body class="body">
+  <!-- <div class="wrapimg"></div> -->
+  <div class="site-wrapper">
+    @@include('./layout/_header.html')
+    <div class="content-top container">
+      <div class="row">
+        <div class="col-4 col-lg-3 content-top__left">
+          <div class="dropdown-cont">
+            <div class="categorymenu-dropdown js-dropdown">Каталог товаров</div>
+            @@include('../modules/_category-menu.html')
+          </div>
+        </div>
+        <div class="site-main col-12 col-md-8 col-lg-9">
+          @@include('../modules/_search-block.html')
+        </div>
+      </div>
+    </div>
+    <div class="home-page container">
+      <div class="row">
+        <aside class="col-3 d-none d-lg-block sidebar">
+        </aside>
+        <main class="site-main col-12 col-lg-9">
+          @@include('../modules/main-slider/_slider.html')
+          @@include('../modules/brend-slider/_slider.html')
 
-  @@include('./layout/_header.html')
-
-  <h2>Это слайдер 2</h2>
-
-<!-- @@include('../modules/sw-slider/_slider.html') -->
 
 
+          <h3 class="home-page__title">Хиты продаж</h3>
+          <!-- Slider main container -->
+          <div class="swiper-container hit-slider  prod-slider">
+            <div class="prod-grid slider-grid swiper-wrapper">
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product2.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product2.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product2.html')
+              </div>
+            </div>
+          </div>
+          <h3 class="home-page__title">Распродажа</h3>
+          <!-- Slider main container -->
+          <div class="swiper-container sale-slider  prod-slider prod-slider_last">
+            <div class="prod-grid slider-grid swiper-wrapper">
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product2.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product2.html')
+              </div>
+              <div class="prod-grid__item  swiper-slide">
+                @@include('../modules/_product.html')
+              </div>
+              <div class="prod-grid__item swiper-slide">
+                @@include('../modules/_product2.html')
+              </div>
+            </div>
+          </div>
 
-  @@include('./layout/_footer.html')
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-
-
-  <script src="js/libs.min.js"></script> 
-  <script src="js/main.min.js"></script> 
+          <div class="home-page__text-block">
+          	<h2>О магазине “Атон”</h2>
+          	<p>Мы являемся официальным партнером ведущих российских и европейских производителей светотехнического и электрического оборудования, промышленных и бытовых систем обогрева. Будучи стремительно развивающейся компанией, мы обладаем разветвленной сетью магазинов, расположенных в крупных торговых центрах Москвы и филиалом в городе Краснодар. Наш успех и Ваше доверие дает на полную уверенность утверждать, что RiLight это воплотившаяся в жизнь мечта о магазине с качественной продукцией и по-настоящему клиентоориентированным персоналом. Мы всегда ориентированы на эффективное решения задач профессионального потребителя, торгового партнера, конечного заказчика. «Вместе на уровень выше» - девиз нашей команды и призыв к партнерам.</p>
+          </div>
 
 
-
-  
+        </main>
+      </div>
+    </div>
+   
+    @@include('./layout/_footer.html')
+   
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </div>
 </body>
 
 </html>

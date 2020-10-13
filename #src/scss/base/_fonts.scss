@@ -1,12 +1,6 @@
-@mixin font($fname, $fstyle, $fweight, $furl) {
-	@font-face {
-		font-family: $fname;
-		font-style: $fstyle;
-		font-weight: $fweight;
-		font-display: swap; // Uncomment to initially display system onfts
-		src: local($fname), url($furl) format('woff2');
-	}
-}
-
-// @include font('Jura', normal, 600, '../fonts/Jura-Medium.woff2');
-@include font('MADE Evolve Sans EVO', normal, 500, '../fonts/MADEEvolveSansEVO-Medium.woff2');
+@include font("Futura PT", "FuturaPT-Book", "400", "normal");
+@include font("Futura PT - Demi", "FuturaPT-Demi", "400", "normal");
+@include font("Futura PT", "FuturaPT-Heavy", "800", "normal");
+@include font("Arial Narrow", "ArialNarrow", "400", "normal");
+@include font("Futura PT", "FuturaPT-Light", "300", "normal");
+@include font("Futura PT", "FuturaPT-Medium", "500", "normal"); 

@@ -1,18 +1,23 @@
 // @import '../css/src/reset';
 // @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
 
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face { font-family: $font_name; font-display: swap; src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2"); font-weight: #{$weight}; font-style: #{$style}; }
+}
+
 @import 'base/fonts'; 
-@import 'base/grid';
+// @import 'base/grid';
 @import 'base/base';
 @import 'layout/buttons';
 @import 'layout/form';
+@import 'modules/mbmenu';
+
+
 
 @import 'layout/header';
+@import '../modules/category-menu';
+@import '../modules/search-block';
+@import 'pages/home';
+@import '../modules/product';
 @import 'layout/footer';
 
-h1{
-	color: red;
-}
-h2{
-	color: green;
-}

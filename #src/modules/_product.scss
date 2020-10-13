@@ -1,0 +1,143 @@
+.product-block {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #eeeeee;
+	background-color: #ffffff;
+	border-radius: 5px;
+	position: relative;
+	padding: 26px 13px 13px;
+	&__lbl-panel {
+		position: absolute;
+		top: 15px;
+		left: 17px;
+		z-index: 2;	
+
+	}
+	&__label {
+		width: 44px;
+		height: 21px;
+		color: #ffffff;
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+		margin-bottom: 8px;
+
+		&_hit {
+			background-color: rgba(74, 167, 65, .8);
+		}
+		&_action{
+			background-color: rgba(221, 95, 95, .8);
+		}
+	}
+	&__mediabox {
+		height: 200px;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 16px;
+
+		img{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			max-width: 100%;
+		}
+	}
+	&__details {}
+	&__title {
+		font-size: 18px;
+		margin-bottom: 16px;
+		
+
+	}
+	&__price-cont {
+		margin-top: auto;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 25px;
+		font-size: 18px;
+	}
+	&__price {
+		color: #000000;
+		font-weight: 500;
+	}
+	&__new-price{
+		color: #d00707;
+		font-weight: 500;
+		margin-right: 12px;
+	}
+	&__old-price{
+		color: #777777;
+		font-size: 16px;
+		text-decoration: line-through;
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__quantity {
+		flex: 0 0 66px;
+	}
+	&__btn {
+		flex: 0  0 135px;
+	}
+}
+.quantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__btn {
+		width: 10px;
+		height: 10px;
+		color: #000000;
+font-size: 22px;
+font-weight: 500;
+line-height: .4;
+cursor: pointer;
+		&_minus {margin-top: -4px;}
+		&_plus {}
+	}
+	&__inp {
+		width: 37px;
+		height: 37px;
+		border: 1px solid #cccccc;
+		background-color: #ffffff;
+		text-align: center;
+		line-height: 37px;
+		margin: 0 6px;
+		border-radius: 6px;
+	}
+}
+.addtocart-btn {
+	width: 135px;
+	height: 37px;
+	line-height: 37px;
+	display: flex;
+	padding: 0 12px;
+	border-radius: 3px;
+	background-color: #f8a440;
+	align-items: center;
+	color: #ffffff;
+font-size: 16px;
+font-weight: 500;
+transition: all .3s;
+cursor: pointer;
+
+&:hover{
+	background-color: #f88640;
+}
+
+	img{
+		margin-right: 11px;
+		width: 18px;
+		height: auto; 
+	}
+
+}
+
+
+.grd{
+	display: flex;
+}
