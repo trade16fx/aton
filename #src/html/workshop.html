@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+@@include('./layout/_head.html')
+
+<body class="body">
+  <!-- <div class="wrapimg"></div> -->
+  <div class="site-wrapper">
+    @@include('./layout/_header.html')
+    <div class="content-top container">
+      <div class="row">
+        <div class="col-4 col-lg-3 content-top__left">
+          <div class="dropdown-cont">
+            <div class="categorymenu-dropdown js-dropdown">Каталог товаров</div>
+            @@include('../modules/_category-menu.html')
+          </div>
+        </div>
+        <div class=" col-12 col-md-8 col-lg-9">
+          @@include('../modules/_search-block.html')
+        </div>
+      </div>
+    </div>
+    <div class="workshop-page container">
+      <div class="row">
+        <aside class="col-3 d-none d-lg-block sidebar">
+        </aside>
+        <main class="site-main col-12 col-lg-9">
+          @@include('../modules/_breadcrumbs.html')
+          <h2>Мастерская</h2>
+          <div class="row workshop-grid">
+
+            @@loop('../modules/_workshop-card.html', [
+              { "title": "Как правильно подобрать кабель для розетки", "image": "work1.jpg" },
+              { "title": "Необходимый инструмент для подключения люстры", "image": "work2.jpg" },
+              { "title": "Выбираем качественныйинтернет-кабель", "image": "work3.jpg" },
+              { "title": "Как правильно подобрать кабель для розетки", "image": "work1.jpg" },
+              { "title": "Необходимый инструмент для подключения люстры", "image": "work2.jpg" },
+              { "title": "Выбираем качественныйинтернет-кабель", "image": "work3.jpg" }
+            ])
+
+
+
+          </div>
+        </main>
+      </div>
+    </div>
+   
+    @@include('./layout/_footer.html')
+   
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </div>
+</body>
+
+</html>
+
+
