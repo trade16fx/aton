@@ -125,6 +125,7 @@ let btnCatalog = document.querySelector('.js-catalog-link');
 let pnlCatalog = document.querySelector('.category-menu');
 let btnClose = document.querySelector('.js-close');
 let btnDropdown = document.querySelector('.js-dropdown');
+let modal = document.querySelector('.js-modalDialog');
 let body = document.querySelector('.body');
 
 let showCatalog = () => pnlCatalog.classList.add('fixed');
@@ -143,7 +144,18 @@ btnDropdown.addEventListener("click", activeCatalog);
 
 function activeCatalog() {
   pnlCatalog.classList.toggle('active');
+  modal.classList.toggle('active');
   this.classList.toggle('active');
+
+  if (body.classList.contains('no-scroll')) {
+    body.classList.remove('no-scroll');
+  }
+  if (modal.classList.contains('active')) {
+    body.classList.add('no-scroll');
+  }
+  
+
+
 }
 
 /* block quantity */
@@ -173,3 +185,4 @@ function clickMinus(event) {
 }
 
 /* eof block quantity */
+

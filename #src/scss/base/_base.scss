@@ -129,3 +129,25 @@ h2 {
   margin-bottom: 28px;
 
 }
+
+.modalDialog {
+    @media (min-width: 992px) { 
+
+    position: fixed;
+    z-index: 111;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;   
+    transition: opacity .4s ease-in;
+    pointer-events: none;
+    opacity: 0;
+    background: rgba(0,0,0,.2);
+      
+    }
+
+    &.active {
+      pointer-events: auto;
+      opacity: 1;
+  }
+}
